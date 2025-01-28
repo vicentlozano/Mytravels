@@ -31,7 +31,7 @@
 
 <script setup>
 import { onMounted, ref } from 'vue'
-import { getAllTravels,deleteTravel } from '@/api/travelsService'
+import { getAllTravels, deleteTravel } from '@/api/travelsService'
 import TravelCard from '@/components/TravelCard.vue'
 import { useRouter } from 'vue-router'
 const router = useRouter()
@@ -49,7 +49,7 @@ const goAdd = () => {
   router.push('/add')
 }
 onMounted(async () => {
- travels.value = await getAllTravels();
+  travels.value = await getAllTravels()
 })
 </script>
 
@@ -114,5 +114,14 @@ h4 {
   font-size: 2em;
   text-wrap: auto;
   font-weight: 700;
+}
+
+@media (max-width: 450px) {
+  .all-travels {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .card {
+    width: 300px;
+  }
 }
 </style>

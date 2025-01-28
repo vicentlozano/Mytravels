@@ -131,4 +131,25 @@ p {
   text-align: center;
   color: rgb(119, 186, 206);
 }
+@media(max-width:450px){
+
+  .parallax {
+  min-height: 200px;
+  min-width: 200px;
+
+}
+.delete {
+  height: 30px;
+  width: 30px;
+}
+.edit {
+  height: 30px;
+  width: 30px;
+}
+.card {
+  width: 200px;
+  height: 100%;
+  
+}
+}
 </style>

@@ -56,4 +56,24 @@ h1{
         width: 60%;
     }
 }
+@media(max-width:600px){
+  .nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows:2fr 1fr;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid white;
+  gap: 2px;
+}
+h1{
+  grid-row: 1 ;
+  grid-column: 1 / -1;
+}
+.link {
+  margin-bottom: 0.4rem;
+}
+}
 </style>

@@ -94,12 +94,14 @@ h2 {
   font-weight: 500;
 }
 
-@media (max-width: 768px) {
+@media(max-width:450px){
+  @media (max-width: 450px) {
+  .last-travels {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .card {
+    width: 300px;
+  }
 }
-@media (min-width: 769px) and (max-width: 1300px) {
-}
-@media (min-width: 1301px) {
-}
-@media (min-width: 1701px) {
 }
 </style>
