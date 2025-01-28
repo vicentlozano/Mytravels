@@ -19,13 +19,14 @@ import HeaderComponent from './components/HeaderComponent.vue'
 #app,
 .principal-grid {
   display: grid;
-  grid-template-rows: minmax(100px, auto) 1fr minmax(60px, auto);
+  grid-template-rows: 100px 1fr minmax(60px, auto);
   width: 100%;
   height: 100%;
 }
 main {
   width: 100%;
   height: 100%;
+  background-color: rgb(198, 228, 235);
 }
 
 h1 {
@@ -38,5 +39,4 @@ h3 {
   padding: 0.3rem;
   margin: 0;
 }
-
 </style>
